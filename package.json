@@ -1,0 +1,40 @@
+{
+  "name": "react-es6-boilerplate",
+  "version": "1.0.0",
+  "description": "This is my own boiler plate with gulp for doing tasks, react-router for creating routes and some folder structure with basic navbar, footer components and a main layout.",
+  "main": "src/main.js",
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2",
+    "react-router": "^1.0.3",
+    "reactify": "^1.1.1",
+    "require-assets": "git+https://github.com/andreypopp/require-assets.git",
+    "moment": "^2.10.6",
+    "flux": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^11.0.1",
+    "graceful-fs": "^4.1.4",
+    "gulp": "^3.9.0",
+    "gulp-clean-css": "^2.0.8",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-minify-css": "^1.2.2",
+    "gulp-open": "^1.0.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^1.5.1",
+    "history": "^1.17.0",
+    "keymirror": "~0.1.0",
+    "object-assign": "^4.0.1",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muralimanohar.P <muralimano28@gmail.com>"
+}

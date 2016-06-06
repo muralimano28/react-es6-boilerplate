@@ -1,0 +1,6 @@
+.main-layout .content {
+    width: 90%;
+    margin: 3.5em auto 0;
+    /* Including larger laptop screens */
+    max-width: 90em;
+}
