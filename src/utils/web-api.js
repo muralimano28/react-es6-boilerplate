@@ -1,6 +1,6 @@
 "use strict";
 
-import URL from "../config/url.js");
+import URL from "../config/url.js";
 
 //Dispatchers
 import AppDispatcher from "../dispatchers/app-dispatchers.js";
