@@ -24,7 +24,7 @@ function buildURL(baseUrl, params, ...paths) {
 			p[0] = '?';
 		}
 	}
-	
+
 	let url = [baseUrl, paths.join("/")].join("/");
 
 	// Replace multiple occurrences of // appearing, and then add the double slash required for
@@ -43,7 +43,7 @@ function _abortPendingRequest(key) {
 
 function _callback(res, errorKey, successKey, apiKey) {
 	let action = null,
-		key = successKey;
+	key = successKey;
 
 	if(!res) {
 		key = errorKey;
@@ -81,7 +81,7 @@ function uploadFile(url, method, formData, key) {
 	let xhr = getXHR(method, url);
 	xhr.onload = () => {
 		let response = this.response,
-			jsonResponse = null;
+		jsonResponse = null;
 		try {
 			jsonResponse = JSON.parse(response);
 		} catch(err) {
@@ -128,40 +128,40 @@ function makeRequest(url, method, data, key) {
 	return xhr;
 }
 module.exports = {
-    // This function will get all the data from server and this is GET request.
-    getData: (actionType, data) => {
-        let key = null,
-            url = "",
-            reqType = "GET";
-        switch (actionType) {
-            // Create different cases to handle different get data actions.
-            default:
-                // Do some actions and define url, reqType, data, key
-        }
+	// This function will get all the data from server and this is GET request.
+	getData: (actionType, data) => {
+		let key = null,
+		url = "",
+		reqType = "GET";
+		switch (actionType) {
+			// Create different cases to handle different get data actions.
+			default:
+				// Do some actions and define url, reqType, data, key
+		}
 		_pendingRequest[key] = makeRequest(url, reqType, data, key);
-    },
-    // This function will set data in server and it handle POST and PUT request.
-    setData: (actionType, data) => {
-        let key = null,
-            url = "",
-            reqType = "POST";
-        switch (actionType) {
-            // Create different cases to handle different set data actions.
-            default:
-                // Do some actions and define url, reqType, data, key
-        }
+	},
+	// This function will set data in server and it handle POST and PUT request.
+	setData: (actionType, data) => {
+		let key = null,
+		url = "",
+		reqType = "POST";
+		switch (actionType) {
+			// Create different cases to handle different set data actions.
+			default:
+				// Do some actions and define url, reqType, data, key
+		}
 		_pendingRequest[key] = makeRequest(url, reqType, data, key);
-    },
-    // This function will delete data in server and it handle DELETE request.
-    deleteData: (actionType, data) => {
-        let key = null,
-            url = "",
-            reqType = "DELETE";
-        switch (actionType) {
-            // Create different cases to handle different delete data actions.
-            default:
-                // Do some actions and define url, reqType, data, key
-        }
+	},
+	// This function will delete data in server and it handle DELETE request.
+	deleteData: (actionType, data) => {
+		let key = null,
+		url = "",
+		reqType = "DELETE";
+		switch (actionType) {
+			// Create different cases to handle different delete data actions.
+			default:
+				// Do some actions and define url, reqType, data, key
+		}
 		_pendingRequest[key] = makeRequest(url, reqType, data, key);
-    }
+	}
 };
